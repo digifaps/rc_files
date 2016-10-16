@@ -26,6 +26,10 @@
 	Plugin 'scrooloose/syntastic'
 	Plugin 'scrooloose/nerdcommenter'
 	Plugin 'godlygeek/tabular'
+	Plugin 'junegunn/goyo.vim'
+	Plugin 'reedes/vim-colors-pencil'
+	Plugin 'kien/ctrlp.vim'
+	Plugin 'renyard/vim-rangerexplorer'
 
 	" All of your Plugins must be added before the following line
 	call vundle#end()            " required
@@ -68,6 +72,12 @@
   nmap <leader>ne :NERDTreeToggle<cr>
 
   " -------------------------------------- "
+  " ----------- Ranger-explorer ---------- "
+  " -------------------------------------- "
+
+	nmap <leader>ra :RangerExplorer<cr>
+
+	" -------------------------------------- "
   " -------------- ctrlp ----------------- "
   " -------------------------------------- "
 
@@ -203,6 +213,21 @@
 
 	map <leader>t :bp<cr>
   map <leader>s :bn<cr>
+	" --- Goyo
+	map <leader>gy :Goyo <cr>
+
+
+	function! s:goyo_enter()
+		    colorscheme pencil
+				set background=dark
+	endfunction
+
+			function! s:goyo_leave()
+				    colorscheme monokai
+					endfunction
+
+					autocmd! User GoyoEnter nested call <SID>goyo_enter()
+					autocmd! User GoyoLeave nested call <SID>goyo_leave()
 
 	set statusline+=%#warningmsg#
 	set statusline+=%{SyntasticStatuslineFlag()}
