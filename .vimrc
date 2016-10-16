@@ -83,6 +83,7 @@
 
   let g:ctrlp_working_path_mode='a'
   nmap <leader>p :CtrlPBuffer<cr>
+  nmap <leader>cp :CtrlP<cr>
 
   " -------------------------------------- "
   " -------------- Gundo ----------------- "
