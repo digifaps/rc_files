@@ -51,7 +51,8 @@ ZSH_THEME="poncho"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git sudo osx battery colored-man-pages sublime dirhistory)
+plugins=(git sudo osx battery)
+
 
 source $ZSH/oh-my-zsh.sh
 

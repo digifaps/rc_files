@@ -30,7 +30,7 @@
 	Plugin 'reedes/vim-colors-pencil'
 	Plugin 'kien/ctrlp.vim'
 	Plugin 'renyard/vim-rangerexplorer'
-
+	Plugin 'terryma/vim-multiple-cursors'
 	" All of your Plugins must be added before the following line
 	call vundle#end()            " required
 	filetype plugin indent on    " required
