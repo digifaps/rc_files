@@ -43,7 +43,7 @@
   endif
 
 	let g:airline_symbols.space = "\ua0"
-  let g:airline_theme = "dark"
+  let g:airline_theme = "ravenpower"
   let g:airline_powerline_fonts = 1         " automatically populate g:airline_symbols with powerline symbols
   let g:airline#extensions#tabline#enabled = 1
   let g:airline#extensions#tabline#fnamemod = ':t'
@@ -153,7 +153,7 @@
   set background=dark
   let g:solarized_termcolors=256
   set t_Co=256
-  colorscheme monokai
+  colorscheme molokai_dark
 
   set tabstop=2               " number of visual spaces per TAB
   set softtabstop=2           " number of spaces in tab when editing
@@ -224,7 +224,7 @@
 	endfunction
 
 			function! s:goyo_leave()
-				    colorscheme monokai
+				    colorscheme molokai_dark
 					endfunction
 
 					autocmd! User GoyoEnter nested call <SID>goyo_enter()
